@@ -1,0 +1,503 @@
+:root {
+    --primary-color: black;
+    --white: #fff;
+    --gap: 3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 7rem;
+}
+
+h3 {
+    font-size: 5rem;
+    margin: 10px 0;
+    letter-spacing: -1px;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 4rem;
+}
+
+h6 {
+    font-size: 3.5rem;
+}
+
+/*BG*/
+.main-bg {
+    background: var(--primary-color);
+    color: var(--white);
+}
+/*BG*/
+.white-bg {
+    background: var(--white);
+}
+
+.main-content {
+    max-width: 1200rem;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+
+.section {
+    min-height: 100vh;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+.menu h1 {
+    font-size: 3rem;
+}
+
+.menu h1 a {
+    color: #ff4500;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.menu-content a:hover {
+    color: orangered;
+    
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.intro {
+    background: linear-gradient(rgba(17, 1, 1, 0.5), #ff4500), url(/LandingPage/img/img-principal.jpg);
+    background-position: top;
+    background-size: cover;
+    background-position-y: 0px;
+    margin-top: -10rem;
+    display: block;
+
+}
+
+.intro-content {
+   text-align: center;
+   display: flex;
+   justify-content: center;
+}
+
+.intro-content .para {
+    top: 65%;
+    position: absolute;
+    font-size: 3.5rem;
+}
+
+.intro-content .h2p {
+    top: 50%;
+    position: absolute;
+}
+
+#quemSomos {
+    color:var(--primary-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#quemSomos {
+    background-image: url(/LandingPage/img/bg-white.svg);
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-position-x: 50rem;
+}
+
+#quemSomos > p {
+    font-size: 2.5rem;
+    word-break:normal;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.title-qs {
+    margin-top: -15rem;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 2rem;
+    font-size: 1.7rem;
+}
+
+.menu-space {
+    height: 10rem;
+}
+
+.principal {
+    color: var(--primary-color);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.box {
+    outline: none;
+    border: none;
+}
+
+.box .input-box1 {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.box .input-box2 {
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+.box .input-box1 input,
+.input-box2 textarea {
+width: 100%;
+height: 30px;
+}
+
+.box .input-box2 textarea {
+    height: 190px;
+}
+
+.box .input-box2 button {
+    background-color: #ff4500;
+    color: var(--white);
+    cursor: pointer;
+    display: block;
+    margin: 0px auto;
+    padding: 10px;
+    width: 50%;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+label {
+    display: flex;
+    font-weight: 700;
+}
+
+.redes-sociais {
+    width: 20rem;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+#servicos {
+    color: var(--primary-color);
+}
+
+.title-servicos {
+    color:#fff;
+    padding: 4rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.plain {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 7rem;
+    
+}
+
+.plain1, .plain3, .plain2 {
+    color: #fff;
+    background:orangered;
+    border-radius: 10px;
+    padding: 7px;
+    font-size: 2.2rem;
+    width: 27rem;
+    height: 38rem;
+}
+
+.dt-line {
+    border-bottom: 1px solid;
+    height: 6vh;
+    font-weight: 700;
+    text-align: center;
+}
+
+.plain dd {
+    font-size: 2.2rem;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 0.7rem;
+    padding: 5px;
+}
+
+
+.inscrevaSe > a {
+    text-decoration: none;
+    background: black;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 0 0.7rem;
+    margin-top: -100px;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.backToTop {
+    position: fixed;
+    text-decoration: none;
+    right: 1rem;
+    bottom: 1rem;
+    display: block;
+    font-weight: 700;
+    padding: 8px 5px;
+    font-size: 1.2rem;
+    margin: 3px;
+    border-radius: 20px;
+    background: orangered;
+    color: #fff;
+}
+
+footer{
+    background-color: #080808;
+    padding: 30px 0 7px;
+}
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+.row-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+.footer-col .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i{
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover{
+    color: #ff4500;
+    background-color: white;
+}
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #ff4500;
+}
+.footer-col .form-sub input::placeholder{
+    color: white;
+}
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #ff4500;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;        
+}
+
+.security {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.security img {
+    padding: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+    .footer-col{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:600px) {
+    .footer-col, body{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:1037px) {
+    .para {
+        margin: 5%;
+    }
+    
+}
+
+@media (max-width:869px) {
+    .intro-content .h2p {
+        margin-top: -5%;
+    } 
+}
+
+@media (max-width:517px) {
+    .intro-content .h2p {
+        margin-top: -10%;
+        font-size: 5rem;
+    } 
+    .intro-content .para {
+        font-size: 1.7rem;
+    }
+}
+
+
+@media (max-width: 964px) {
+    .plain{
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 838px) {
+    .plain1{
+        width: 20rem;
+    }
+    .dt-line {
+        font-size: 15px;
+    }
+    .plain dd {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 631px) {
+    .plain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .plain1, .plain2, .plain3 {
+        height: 15rem;
+    }
+    .plain dd {
+        font-size: 1rem;
+        margin-top: auto;
+    }
+    .inscrevaSe > a {
+        font-size: 1.3rem;
+    }
+    .title-servicos {
+        padding: 0.5rem;
+    }
+}

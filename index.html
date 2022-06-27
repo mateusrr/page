@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body class="main-bg">
+    <!--Menu-->
+    <aside class="menu">
+    <section class="main-content menu-content">
+        <h1>
+           <a href="#">TI</a>
+
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#quemSomos">Quem Somos</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </section>
+    </aside>
+
+    <div class="menu-space"></div>
+
+    <!--Principal Início -->
+    <section class="intro main-bg section">
+        <div class="intro-content">
+            <h2 class="h2p">Soluções para o seu negócio</h2>
+            <p class="para">A evolução que a sua empresa necessita.</p>
+        </div>
+    </section>
+
+    <!--Quem somos-->
+    <section  id="quemSomos" class=" white-bg section">
+        <h2 class="title-qs">Quem somos</h2>
+        <p>Somos uma empresa de Tecnologia da Informação, que oferece suporte técnico, implementação de sistemas, manutenção preventiva, corretiva de sistemas e máquinas e estudos de novas tecnologias.</p>
+        <p>Temos como prioridade humanizar os processos tecnológicos oferecendo apoio e soluções que viabilizem o desenvolvimento do cliente, com alta qualidade e custo acessível.</p>
+    </section>
+
+    <!--Soluções-->
+    <section class="main-bg section">
+        <div id="planos">
+            <h2 class="title-servicos">Planos</h2>
+            <section class="plain">
+                <dl class="plain1">
+                    <dt class="dt-line">Soluções em Software</dt>
+                    <dd>Soluçoes de Segurança de usuário (Endpoint), Sistemas operacionais e sistemas para colaboração.</dd>
+                    <dd class="inscrevaSe"><a href="#inscrevaSe">Saiba mais</a></dd>
+                </dl>
+
+                <dl class="plain1">
+                    <dt class="dt-line">Serviços Profissionais</dt>
+                    <dd>Implementação profissional das soluções ofertadas e treinamentos que irão garantir a máxima utilização das soluções adquiridas conosco.</dd>
+                    <dd class="inscrevaSe"><a href="#inscrevaSe">Saiba mais</a></dd>
+                </dl>
+                
+                <dl class="plain1">
+                    <dt class="dt-line">Soluções em Hardware</dt>
+                    <dd>Soluçoes físicas para Datacenters e usuários na ponta como: No-breaks, Firewalls, servidores, Storages, Switches, Notebooks, Desktops, monitores e demais dispositivos.</dd>
+                    <dd class="inscrevaSe"><a href="#inscrevaSe">Saiba mais</a></dd>
+                </dl>
+            </section>
+            </div>
+    </section>
+    
+    <!--Contato-->
+    <section class="principal white-bg section">
+        <form id="contato" class="box">
+            <h3>Envie a sua mensagem</h3>
+            <div class="input-box1">
+                <label>Nome:</label>
+                <input type="text" placeholder="Nome" required>
+            </div>
+            <div class="input-box1">
+                <label>Sobrenome:</label>
+                <input type="text" placeholder="Sobrenome">
+            </div>
+            <div class="input-box1">
+                <label>Telefone:</label>
+                <input type="phone" placeholder="(00) 00000-0000">
+            </div>
+            <div class="input-box1">
+                <label>E-mail:</label>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-box2">
+                <label>Mensagem:</label>
+                <textarea placeholder="Digite a sua mensagem...." required></textarea>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="input-box2">
+                <button>Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <!--Rodapé-->
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href=""> política de privacidade </a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Obter ajuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Opções De Pagamento</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <div class="form-sub">
+                        <form>
+                            <input type="email" placeholder="Digite o seu e-mail" required>
+                            <button>subscrever</button>
+                        </form>
+                    </div>
+
+                    <div class="medias-socias">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="security">
+                <img width="15%" src="./img/security/google.png">
+                <p>Copyright © 2022 MR Company.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--Botão subir ao topo-->
+    <a href="#" class="backToTop">
+        TOP
+    <a> 
+</body>
+</html>
